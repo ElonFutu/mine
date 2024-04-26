@@ -7,6 +7,6 @@ if [ "$(id -u)" != "0" ]; then
     exit 1
 fi
 
-nohup /root/xelis_taxminer --wallet xel:w2ta8au79jejkcjfqrd08jdm0hhcsuh3a3drrrdc3j5wtvxr7czsqeeateh --host 127.0.0.1:8080 --boot --display-hs-all --worker taxminer >/root/xelis_taxminer-`date +%Y-%m-%d`.log  2>&1 &
+nohup /root/xelis_taxminer --wallet xel:w2ta8au79jejkcjfqrd08jdm0hhcsuh3a3drrrdc3j5wtvxr7czsqeeateh --host 192.168.111.51:8080 --boot --display-hs-all --worker taxminer >/root/xelis_taxminer-`date +%Y-%m-%d`.log  2>&1 &
 
 echo "[`date '+%Y-%m-%d %H:%M:%s'`] xelis_taxminer started"
